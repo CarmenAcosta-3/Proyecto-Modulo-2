@@ -1,0 +1,113 @@
+@media screen and (min-width: 1024px) {
+  .base {
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: end;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .introduccion {
+    text-align: center;
+    max-width: 50ch;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .introduccion h1 {
+    font-size: 3.5rem;
+    font-family: var(--font-title);
+    margin-bottom: 1rem;
+  }
+
+  .introduccion h3 {
+    font-size: 1.75rem;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+    max-width: 60ch;
+    margin-inline: auto;
+  }
+
+  .introduccion p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 65ch;
+    margin-inline: auto;
+  }
+
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .galeria img:nth-child(1) {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    object-fit: cover;
+  }
+
+  .galeria img:nth-child(2) {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    object-fit: cover;
+  }
+
+  .galeria img:nth-child(3) {
+    grid-column: 4/5;
+    grid-row: 2/4;
+    object-fit: cover;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .card:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+
+  .all-shop {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .all-shop a {
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  .all-shop a:hover {
+    background-color: white;
+    color: var(--secondary-color);
+  }
+}
