@@ -31,6 +31,7 @@
 
 .galeria {
   width: 100%;
+  height: fit-content;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-template-rows: auto;
@@ -41,6 +42,7 @@
   object-fit: cover;
   max-width: 100%;
   box-sizing: border-box;
+  aspect-ratio: 1/1;
 }
 
 .galeria img:nth-child(1) {
@@ -139,6 +141,12 @@
   width: 90vw;
   text-decoration: none;
   text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+   .lateral-details {
+  display: none;
+}  
 }
 
 
